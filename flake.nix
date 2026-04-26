@@ -3,7 +3,7 @@
 
   inputs = {
     flake-parts.url = "github:hercules-ci/flake-parts";
-    nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-25.11";
+    nixpkgs.url = "github:nixos/nixpkgs/a4bf06618f0b5ee50f14ed8f0da77d34ecc19160";
     flake-utils.url = "github:numtide/flake-utils";
   };
 
