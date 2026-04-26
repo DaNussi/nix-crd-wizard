@@ -41,6 +41,9 @@
 
 !Makefile
 
+!flake.nix
+!flake.lock
+
 !assets/*
 !crd-wizard.rb
 
