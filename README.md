@@ -54,6 +54,11 @@ brew install crd-wizard
 ${aurHelper:-paru} -S crd-wizard-bin
 ```
 
+### Nix
+```shell
+nix run 'github:DaNussi/nix-crd-wizard'
+```
+
 ### One Script Installer
 You can install the latest version with one command:
 

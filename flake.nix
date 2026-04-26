@@ -21,7 +21,7 @@
               version = "dev";
               src = ./.;
 
-              vendorHash = "sha256-3n+zrLhaBhejFSz5hXkPXIvGHrLfSgD7VN8YW3P3kQ8=";
+              vendorHash = "sha256-9+HZL11PQuIndbXcZg+cYPBESX9eSWrKsw9/5crXzGw=";
 
               subPackages = [ "." ];
 
@@ -59,6 +59,14 @@
           apps.default = {
             type = "app";
             program = "${self'.packages.crd-wizard}/bin/crd-wizard";
+
+            meta = with pkgs.lib; {
+              description = "Kubernetes CRD visualization and exploration tool (TUI)";
+              homepage = "https://github.com/pehlicd/crd-wizard";
+              license = licenses.gpl3Only;
+              maintainers = [ ];
+              platforms = platforms.linux ++ platforms.darwin;
+            };
           };
         };
     };
