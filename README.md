@@ -56,7 +56,11 @@ ${aurHelper:-paru} -S crd-wizard-bin
 
 ### Nix
 ```shell
-nix run 'github:DaNussi/nix-crd-wizard'
+nix run 'github:DaNussi/nix-crd-wizard' -- tui
+```
+or
+```shell
+nix run 'github:DaNussi/nix-crd-wizard' -- web
 ```
 
 ### One Script Installer
